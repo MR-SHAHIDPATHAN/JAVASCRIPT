@@ -80,8 +80,8 @@
 //camel case : myName
 // pascal case : Myname 
 // myName 
-var firstName = "shahid";
-console.log(firstName);
+// var firstName = "shahid";
+// console.log(firstName);
 
 
 // var myAge = 24;
@@ -423,6 +423,12 @@ console.log(firstName);
 // var x = 5;  // number 
 // var y = "5"; // string 
 
+
+
+
+
+
+
 // console.log("is both the x and y are equal or not" +  x == y );
 // I will tell you when we will see es6
 // console.log(`Is both the x and y are equal : ${x === y}`);
@@ -441,10 +447,12 @@ console.log(firstName);
 
 // console.log(3+3);
 // console.log(10-5);
-// console.log(20/5);
+// console.log(20/3);
 // console.log(5*6);
 
-// console.log(10%3);
+// console.log(10%4);
+// reminder = 2
+// output = 2 
 
 // console.log("Remainder Operator " + 27%4);
 
@@ -455,6 +463,13 @@ console.log(firstName);
 // If used postfix, with operator after operand (for example, x++), 
 // the increment operator increments and returns the value before incrementing.
 
+// 10++
+//11
+
+//++10
+//11 
+
+
 // postfix X++ Increament
 // prefix ++X Increament 
 
@@ -462,13 +477,20 @@ console.log(firstName);
 //  postfix X-- decreament
 // prefix --X  decreament 
 
-// debugger;
+// // debugger;
 // var num = 15;
 
-// var newNum = ++num + 5;
-// console.log(num);
+// var newNum = ++num  + 5;  // 15 + 5 //20
+// // console.log(num);
 // console.log(newNum);
 
+
+ // debugger;
+// var num = 15;
+
+// var newNum = --num  + 5;  // 14 + 5 //19
+ // console.log(num);
+// console.log(newNum);
 
 
 
@@ -510,12 +532,14 @@ console.log(firstName);
 // A comparison operator compares its operands and 
 // returns a logical value based on whether the comparison is true.
 
+// 20 + 20  = 40 
+
 // var a = 30;
 // var b = 10;
 
-// console.log(a==b);
+// console.log(a==b);// false 
 
-// console.log(a != b);
+// console.log(a !=  b);  //true 
 
 
 
@@ -535,15 +559,25 @@ console.log(firstName);
 
 // Greater than or equal (>=)
 // var a = 30;
+// var b = 30;
+
+// // console.log(a >= b);
+
+// // Less than (<)
+// var a = 30;
 // var b = 10;
 
-// console.log(a >= b);
-
-// Less than (<)
 // console.log(a < b);
 
 // Less than or equal (<=)
 // console.log(a <= b);
+
+
+
+
+
+
+
 
 
 
@@ -558,8 +592,8 @@ console.log(firstName);
 // The logical AND (&&) operator (logical conjunction) for a set of 
 // operands is true if and only if all of its operands are true.
 
-// console.log(   a > b   &&    b > 50   &&  b > 0  );
-
+// console.log(   a > b   &&    b < 50   &&  b > 0  );
+// true    true   false
 
 // console.log(a > b && b > -50 && b < 0);
 
@@ -568,8 +602,7 @@ console.log(firstName);
 
 
 
-
-// Logical OR (||)
+// Logical OR (||) 
 // The logical OR (||) operator (logical disjunction) for a set of 
 // operands is true if and only if one or more of its operands is true.
 
@@ -577,7 +610,7 @@ console.log(firstName);
 // var b = -20;
 
 // console.log(   ( a < b ) ||  ( b > 0 )  || ( b < 0)  );
-
+// false     false     true 
 
 // console.log((a < b) || (b > 0) || (b > 0));
 
@@ -586,11 +619,11 @@ console.log(firstName);
 // takes truth to falsity and vice versa.
 
 
-// var a = 30;
+// var a = 30; 
 // var b = -20;
 
-// console.log(   !(   (a>0)   ||   (b<0)   )    );
-
+// console.log( !(   (a>0)   ||   (b<0)   ));
+// // true      // true
 
 
 
@@ -728,13 +761,6 @@ console.log(firstName);
 
 
 
-
-
-
-
-
-
-
 /**** Section 6👉 Control Statement - 
  * 
  * 1️⃣If...Else */
@@ -745,34 +771,22 @@ console.log(firstName);
 // If the condition is falsy, another statement can be executed.
 
 
-
-
-
-// if raining = raincoat
-// else no raincoat
-
-
-// var tomr = 'sunny';
-
-// if( tomr == "rain"){
-//   console.log("take a raincoat");
+// if(){
 
 // }else{
-// console.log("No raincoat ");
 
 // }
 
 
 
+// var fname = 'farhin';
+// // satarkar 
+// // karadkar 
+// if(fname == "farhin"){
+//   console.log("satarkar");
 
-
-
-
-
-// if(tomr == 'rain'){
-//   console.log('take a raincoat');
 // }else{
-//   console.log('No need to take a raincoat');
+//   console.log("karadkar");
 // }
 
 
@@ -790,6 +804,39 @@ console.log(firstName);
 // input // 2020
 // 2020 // 0 
 // 100 
+
+// var year = 2025;
+
+// if(year%4==0 || year%100==0 ){
+//   console.log("leaf year");
+
+// }else{
+//   console.log("not leaf year");
+// }
+
+
+
+// voting 18+ 
+
+// var age = 16;
+
+// if( age > 18 ){
+
+// console.log("you can vote");
+
+
+// }else{
+//   console.log("you can't vote");
+// }
+
+
+
+
+
+
+
+
+
 
 // var year = 2025;
 
@@ -909,12 +956,50 @@ console.log(firstName);
 
 
 
+// fname = farhin 
+// lanme = shekh 
+// location = satara 
+
+// web developer 
+
+// var fname = "farhin";
+// var lname = "shaikh";
+// var location = "satara";
+
+// if(fname == "farhin"){
+//   if(lname =="shaikh"){
+//     if(location=="satara"){
+//       console.log("web developer");
+
+//     }else{
+//       console.log("location not match");
+//     }
+
+//   }else{
+//     console.log("last name not match ");
+//   }
+
+// }else{
+//   console.log("name not match");
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 // What is truthy and falsy values in Javascript?
 
 // we have total 5 falsy values in javascript
 // 👉 0,"",undefined,null,NaN,false** is false anyway
+
 
 // 0
 // ""
@@ -923,14 +1008,29 @@ console.log(firstName);
 // NaN
 // false
 
+// score = 29
+// won 
+// loss 
 
+// var score = NaN;
 
+// if(score == 20 ){
 
-// if(score = 5){
-//   console.log("OMG, we loss the game 😭");
+//   console.log("loss");
+
 // }else{
-//   console.log("Yay, We won the game 😀");
+//   console.log("won");
 // }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -948,38 +1048,13 @@ console.log(firstName);
 // var age = 18;
 // if( age >= 18 ){
 //   console.log(" you can vote ");
-
+// // 
 // }else{
 //   console.log("you can't vote ");
 // }
 
-// // 2️⃣Conditional (ternary) operator
-// var age = 1;
-// console.log(    (age >= 18)   ?   "you can vote"  :   "you can't vote");
-
-
-
-
-
-
-// var age = 17;
-// if(age >= 18){
-//   console.log("you are eligible to vote");
-// }else{
-//   console.log("you are not eligible to vote");
-// }
-
-
-
-
-
-
-// var age = 18;
-// console.log((age >= 18) ? "you can vote" : "you can't vote");
-
-
-
-
+// var myAge = 12;
+// console.log(   ( myAge >=18 ) ? "you can vote" : "you can't vote" );
 
 
 
@@ -991,11 +1066,14 @@ console.log(firstName);
 // 1st without break statment 
 // Find the Area of circle, triangle and rectangle?
 
+// Area 
+//circle = PI*r**2
+//triangle = (l*b)/2
+//rectangle =  (l*b)
 
 
 
-
-// var area = "circle";
+// var area = "triangle";
 
 // var PI = 3.142, l=5,  b=4, r=3;
 
@@ -1014,25 +1092,67 @@ console.log(firstName);
 
 
 // switch , case , break 
-// var area = "triangle" ;
-// var PI = 3.142, l=5, b=4, r=3;
+
+
+// switch(){
+//   case : {
+
+//   }
+
+//   case:
+
+// }
+
+var area = "farhin";
+var PI = 3.142, l=5, b=5, r=3;
 // debugger;
+switch(area){
+
+  case 'circle': 
+    console.log("the area of the circle is : " + PI*r**2);
+    break;
+
+  case 'triangle':
+    console.log("the area of the triangle is : " + (l*b)/2);
+    break;
+
+  case 'rectangle':
+    console.log("the area of the rectangle is : " + (l*b));
+    break;
+
+
+
+
+  default:
+    console.log("please enter valid data");
+}   
+
+
+
+
 // switch(area){
-//   case 'circle': 
-//     console.log("the area of the circle is : " + PI*r**2);
+
+// case "circle":
+//   console.log(fsfsd);
+//   break;
+
+//   case "tri":
+//     console.log();
 //     break;
 
-//   case 'triangle':
-//     console.log("the area of the triangle is : " + (l*b)/2);
-//     break;
+// default :
+// console.log();
 
-//   case 'rectangle':
-//     console.log("the area of the rectangle is : " + (l*b));
-//     break;
+// }
 
-//   default:
-//     console.log("please enter valid data");
-// }   
+
+
+
+
+
+
+
+
 
 
 
@@ -2993,13 +3113,15 @@ console.log(firstName);
 // Math.round() 🙋‍♂️
 // returns the value of x rounded to its nearest integer
 
-// let num = 10.901;
+
+
+// let num = 10.501;
 // console.log(Math.round(num));
 
 // Math.pow() 🙋‍♂️
 // Math.pow(x, y) returns the value of x to the power of y
 
-// console.log(Math.pow(2,3));
+// console.log(Math.pow(5,3));
 // console.log(2**3);
 
 
@@ -3026,10 +3148,10 @@ console.log(firstName);
 // Math.ceil() 🙋‍♂️
 // Math.ceil(x) returns the value of x rounded up to its nearest integer
 
-// console.log(Math.ceil(4.21));
+// console.log(Math.ceil(4.9));
 // console.log(Math.round(4.61));
 
-// console.log(Math.ceil(99.01));
+// console.log(Math.ceil(-99.7)); 
 // console.log(Math.round(99.1));
 
 
@@ -3038,14 +3160,14 @@ console.log(firstName);
 // Math.floor(x) returns the value of x rounded down to its nearest integer
 
 // console.log(Math.floor(-40.1)); 
-// console.log(Math.floor(99.1)); 
+// console.log(Math.floor(99.02)); 
 
 
 
 // Math.min() 🙋‍♂️
 // Math.min() can be used to find the lowest value in a list of arguments
 
-// console.log(Math.min(0, 150, 30, 20, -800, -200));
+// console.log(Math.min(0, 150, 30, 20, 800, -200));
 
 // Math.max() 🙋‍♂️
 // Math.max() can be used to find the highest value in a list of arguments
@@ -3058,8 +3180,9 @@ console.log(firstName);
 // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
 
 // console.log(0.40092560383819853*10);
-// console.log(Math.random());
-// console.log(Math.floor(Math.random()*10));
+// console.log(Math.random()*10);
+
+// console.log(Math.floor(Math.random()*10000));
 // console.log(Math.floor(Math.random()*10)); // 0 to 9
 
 
@@ -3076,8 +3199,8 @@ console.log(firstName);
 // Math.trunc()  🙋‍♂️
 // The trunc() method returns the integer part of a number
 
-// console.log(Math.trunc(4.6)); // floor 
-// console.log(Math.trunc(-99.1));
+// console.log(Math.trunc(4.7)); // floor 
+// console.log(Math.trunc(-99.7));
 
 
 
@@ -3086,11 +3209,6 @@ console.log(firstName);
 // if the argument is a positive number, Math.trunc() is equivalent to 
 // Math.floor(),
 // otherwise Math.trunc() is equivalent to Math.ceil().
-
-
-
-
-
 
 
 
@@ -3135,6 +3253,7 @@ console.log(firstName);
 // if we want to use the document object, methods or properties
 // For example
 // document.
+
 // 👉 document.getElementById()
 
 
